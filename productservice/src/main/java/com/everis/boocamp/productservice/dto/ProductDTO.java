@@ -7,6 +7,16 @@ public class ProductDTO {
 	private Long productId;
 	
 	private String channel;
+	
+	private String serverPort;
+
+	public String getServerPort() {
+		return serverPort;
+	}
+
+	public void setServerPort(String serverPort) {
+		this.serverPort = serverPort;
+	}
 
 	public Long getProductId(Long id) {
 		return productId;
