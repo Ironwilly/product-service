@@ -17,8 +17,7 @@ public class ProductServiceImp implements ProductServiceI {
 	@Autowired
 	Environment environment;
 	
-	@Autowired
-	private ProductDTO productDTO;
+
 	
 	@Override
 	public ProductDTO getProductId(Long id) {
