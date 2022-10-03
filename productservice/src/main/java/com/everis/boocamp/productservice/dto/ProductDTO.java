@@ -1,5 +1,6 @@
 package com.everis.boocamp.productservice.dto;
 
+
 public class ProductDTO {
 	
 	
@@ -22,6 +23,21 @@ public class ProductDTO {
 	public void setChannel(String channel) {
 		this.channel = channel;
 	}
+
+	public ProductDTO(Long productId, String channel) {
+
+		this.productId = productId;
+		this.channel = channel;
+	}
+
+	public ProductDTO() {
+		super();
+	}
+	
+	
+	
+	
+	
 	
 	
 
