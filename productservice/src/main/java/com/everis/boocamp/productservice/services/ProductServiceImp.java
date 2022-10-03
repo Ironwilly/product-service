@@ -25,12 +25,7 @@ public class ProductServiceImp implements ProductServiceI {
 		ProductDTO productDTO = new ProductDTO();
 		productDTO.setProductId(id);
 		productDTO.setChannel("GET");
-		port = environment.getProperty("local.server.port");
 		productDTO.setServerPort(environment.getProperty("local.server.port"));
-		
-		
-	
-		
 		
 		return productDTO;
 	}
@@ -42,9 +37,8 @@ public class ProductServiceImp implements ProductServiceI {
 		ProductDTO productDTO = new ProductDTO();
 		productDTO.setProductId(id);
 		productDTO.setChannel("Post");
-		port = environment.getProperty("local.server.port");
+		productDTO.setServerPort(environment.getProperty("local.server.port"));
 	
-		
 		return productDTO;
 	}
 
