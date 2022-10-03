@@ -6,6 +6,8 @@ public interface ProductServiceI {
 	
 	public ProductDTO getProductId(Long id);
 	
+	public ProductDTO postProductId(Long id);
+	
 
 
 }

@@ -26,6 +26,20 @@ public class ProductServiceImp implements ProductServiceI {
 		productDTO.setChannel("GET");
 		port = environment.getProperty("local.server.port");
 		
+		
+		return productDTO;
+	}
+
+
+
+	@Override
+	public ProductDTO postProductId(Long id) {
+		ProductDTO productDTO = new ProductDTO();
+		productDTO.setProductId(id);
+		productDTO.setChannel("Post");
+		port = environment.getProperty("local.server.port");
+	
+		
 		return productDTO;
 	}
 
