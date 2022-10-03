@@ -3,15 +3,15 @@ package com.everis.boocamp.productservice.dto;
 public class ProductDTO {
 	
 	
-	private Integer productId;
+	private Long productId;
 	
 	private String channel;
 
-	public Integer getProductId() {
+	public Long getProductId(Long id) {
 		return productId;
 	}
 
-	public void setProductId(Integer productId) {
+	public void setProductId(Long productId) {
 		this.productId = productId;
 	}
 
@@ -22,6 +22,11 @@ public class ProductDTO {
 	public void setChannel(String channel) {
 		this.channel = channel;
 	}
+	
+	
+
+	
+	
 	
 	
 

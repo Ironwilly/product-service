@@ -1,5 +1,6 @@
 package com.everis.boocamp.productservice.controller;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -14,10 +15,20 @@ import com.everis.boocamp.productservice.services.ProductServiceI;
 @RequestMapping("/microservicio")
 public class ProductController {
 
+	
+	
 	private ProductServiceI productServiceI;
 	
-	@GetMapping("/*")
-	public ProductDTO getProduct(@PathVariable Integer id) {
+	
+	
+	public ProductController(ProductServiceI productServiceI) {
+		this.productServiceI = productServiceI;
+	}
+
+
+
+	@GetMapping("{id}*")
+	public ProductDTO getProduct(@PathVariable Long id) {
 		return productServiceI.getProductId(id);
 	}
 	
@@ -25,5 +36,5 @@ public class ProductController {
 	
 	
 	
-	@PostMapping("/*")
+
 }

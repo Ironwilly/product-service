@@ -1,9 +1,11 @@
 package com.everis.boocamp.productservice.services;
 
+import com.everis.boocamp.productservice.dto.ProductDTO;
+
 public interface ProductServiceI {
 	
-	public Integer getProductId(int id);
+	public ProductDTO getProductId(Long id);
 	
-	public String getChannel(String channel);
+
 
 }
